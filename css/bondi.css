@@ -1,3 +1,22 @@
 body{
     font-family: "Roboto", sans-serif;
 }
+
+.navbar{
+    background-color: #252525;
+}
+
+.navbar .nav-item{
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.navbar .nav-item.active,
+.navbar .nav-item:hover{
+    color: #F7632C;
+}
+
+.navbar .navbar-toggler{
+    color: #fff;
+    border-color: #fff;
+}
