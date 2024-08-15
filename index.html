@@ -17,10 +17,13 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg">
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container-fluid  mx-3 my-2">
             <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
-            <button class="navbar-toggler"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <i class="fa-solid fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
@@ -35,8 +38,43 @@
             </div>
         </div>
     </nav>
+    <!-- End Navbar -->
 
-    
+    <!-- Start Landing Section -->
+
+    <!-- End Landing Section -->
+    <div class="landing position-relative text-light">
+        <div class="overlay position-absolute w-100 h-100 top-0 bg-black opacity-50"></div>
+            <div id="carouselExample" class="carousel slide w-100 h-100 d-flex align-items-center">
+                <div class="carousel-inner w-100 ms-5">
+                    <div class="carousel-item active w-100">
+                        <h1 class="fw-light display-1">Outstanding</h1>
+                        <h1 class="fw-light display-1" style="color: var(--main-color);">Coffee Shop</h1>
+                        <p class="fw-light">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,</p>
+                        <button href="#" class="px-4 py-3 btn border-0 fw-medium text-light">LEARN MORE</button>
+                    </div>
+                    <div class="carousel-item w-100">
+                        <h1 class="fw-light display-1">Outstanding</h1>
+                        <h1 class="fw-light display-1" style="color: var(--main-color);">Coffee Shop</h1>
+                        <p class="fw-light">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,</p>
+                        <button href="#" class="px-4 py-3 btn border-0 fw-medium text-light">LEARN MORE</button>
+                    </div>
+                </div>
+                <div class="d-flex w-100">
+                    <button class="carousel-control-prev align-self-end bg-light mb-5" style="color: var(--main-color);" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </button>
+                    <button class="carousel-control-next align-self-end bg-light mb-5" style="color: var(--main-color);" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div>
+            </div>
+    </div>
+
+
+
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/all.min.js"></script>

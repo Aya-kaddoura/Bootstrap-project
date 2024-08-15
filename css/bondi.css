@@ -1,6 +1,11 @@
+:root{
+    --main-color: #F7632C;
+}
 body{
     font-family: "Roboto", sans-serif;
 }
+
+ /* Start Navbar  */
 
 .navbar{
     background-color: #252525;
@@ -13,10 +18,44 @@ body{
 
 .navbar .nav-item.active,
 .navbar .nav-item:hover{
-    color: #F7632C;
+    color: var(--main-color);
 }
 
 .navbar .navbar-toggler{
     color: #fff;
     border-color: #fff;
 }
+
+ /* End Navbar  */
+
+ /* Start Landing Section  */
+
+.landing{
+    height: calc(100vh - 74px);
+    background-image: url("../images/banner-bg.png");
+    background-size: cover;
+}
+
+.landing .carousel-item button{
+    border-radius: 0;
+    background-color: var(--main-color);
+}
+
+.landing .carousel-control-prev{
+    left: auto;
+    transform: translateX(-100px);
+}
+
+.landing .carousel-control-next{
+    right: auto;
+}
+
+.landing .carousel-control-prev ,
+.landing .carousel-control-next{
+    background-color: var(--main-color);
+    opacity: 1;
+    width: 40px;
+    font-size: 3em;
+} 
+
+ /* End Landing Section  */
