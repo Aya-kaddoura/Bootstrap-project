@@ -64,7 +64,10 @@ body{
 
  /* Start About Us Section */
 
-    .about-us h1{
+    .about-us h1,
+    .our-gallery h1,
+    .our-services h1,
+    .our-services h3{
         color: var(--main-color);
     }
 
@@ -72,24 +75,25 @@ body{
         line-height: 1.7em
     }
 
-    .about-us button{
+    .about-us button,
+    .our-gallery button,
+    .our-services button{
         border-radius: 0;
         font-size: 1.2em;
     }
 
-    .about-us button:hover{
+    .about-us button:hover,
+    .our-gallery button:hover,
+    .our-services button:hover{
         background-color: var(--main-color);
     }
 
  /* End About Us Section */
 
 /* Start Our Gallery Section */
-.our-gallery h1{
-    color: var(--main-color);
-}
+
 .our-gallery .overlay{
     width: calc(100% - 24px);
-    /* display: none !important; */
     background-color: transparent !important;
     transition: all ease .5s !important;
     cursor: pointer;
@@ -113,3 +117,40 @@ body{
 
 
 /* End Our Gallery Section */
+
+/* Start Our Services Section */
+
+.our-services{
+    min-height: 800px;
+}
+.our-services .bg-img{
+    background-image: url("../images/services-bg.png");
+    background-position: center left;
+    min-height: 300px;
+}
+
+.our-services img{
+    width: 80px;
+    height: 80px !important;
+    top: -40px;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.our-services .service{
+    padding-top: 5rem !important;
+}
+
+.our-services .bg-img .row{
+    top: 80%;
+}
+
+.our-services .service-btn{
+    display: none;
+}
+
+.our-services .service:hover .service-btn{
+    display: block;
+}
+
+/* End Our Services Section */
