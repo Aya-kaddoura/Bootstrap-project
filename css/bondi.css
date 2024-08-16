@@ -82,3 +82,34 @@ body{
     }
 
  /* End About Us Section */
+
+/* Start Our Gallery Section */
+.our-gallery h1{
+    color: var(--main-color);
+}
+.our-gallery .overlay{
+    width: calc(100% - 24px);
+    /* display: none !important; */
+    background-color: transparent !important;
+    transition: all ease .5s !important;
+    cursor: pointer;
+}
+.our-gallery svg{
+    color: #fff;
+    display: none;
+    cursor: pointer;
+}
+.our-gallery .my-card:hover .overlay{
+    background-color: #252525 !important;
+}
+.our-gallery .my-card:hover .overlay,
+.our-gallery .my-card:hover svg{
+    display: block !important;
+    transition: all ease .3s !important;
+}
+.our-gallery svg:hover{
+    color: var(--main-color) !important;
+}
+
+
+/* End Our Gallery Section */
