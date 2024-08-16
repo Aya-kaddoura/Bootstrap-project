@@ -56,6 +56,29 @@ body{
     opacity: 1;
     width: 40px;
     font-size: 3em;
+    background-color: transparent;
 } 
 
  /* End Landing Section  */
+
+
+ /* Start About Us Section */
+
+    .about-us h1{
+        color: var(--main-color);
+    }
+
+    .about-us p{
+        line-height: 1.7em
+    }
+
+    .about-us button{
+        border-radius: 0;
+        font-size: 1.2em;
+    }
+
+    .about-us button:hover{
+        background-color: var(--main-color);
+    }
+
+ /* End About Us Section */
