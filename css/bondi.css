@@ -67,7 +67,8 @@ body{
     .about-us h1,
     .our-gallery h1,
     .our-services h1,
-    .our-services h3{
+    .our-services h3,
+    .testimonial h1{
         color: var(--main-color);
     }
 
@@ -154,3 +155,70 @@ body{
 }
 
 /* End Our Services Section */
+
+
+.carousel-indicators [data-bs-target] {
+    background-color: #252525;
+    opacity: 1;
+    height: 15px;
+    width: 60px;
+    border-radius: 15px;
+}
+
+.carousel-indicators .active{
+    background-color: var(--main-color);
+}
+
+.client-section h3{
+    margin-left: 60px;
+    color: var(--main-color);
+}
+
+.client-section::after,
+.client-section::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 60px;
+    height: 100%;
+}
+.client-section::after{
+    top: 15px;
+    left: 0;
+    bottom: 0;
+    border-left: solid 3px #252525;
+    border-top: solid 3px #252525;
+}
+
+.client-section::before{
+    right: 0;
+    top: 0;
+    border-right: solid 3px #252525;
+    border-bottom: solid 3px #252525;
+}
+
+
+
+
+
+
+
+/* content: '';
+position: absolute;
+width: 100px;
+height: 150px;
+border-bottom: 3px solid #252525;
+border-right: 3px solid #252525;
+top: 12px;
+left: initial;
+right: 0;
+} */
+
+
+
+
+@media (max-width:576px){
+    .our-services{
+        height: 175vh;
+    }
+}
