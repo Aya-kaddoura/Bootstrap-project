@@ -157,13 +157,12 @@ body{
 
 /* End Our Services Section */
 
-
+/* Start Testimonial Section */
 .carousel-indicators [data-bs-target] {
     background-color: #252525;
     opacity: 1;
     height: 15px;
     width: 60px;
-    border-radius: 15px;
 }
 
 .carousel-indicators .active{
@@ -197,6 +196,7 @@ body{
     border-right: solid 3px #252525;
     border-bottom: solid 3px #252525;
 }
+/* End Testimonial Section */
 
 /* Start Contact US Section */
 .form-bg{
@@ -205,7 +205,13 @@ body{
 }
 /* End Contact US Section */
 
-
+/* Start Footer */
+.footer a:hover{
+    color: var(--main-color) !important;
+    opacity: 1 !important;
+    transition: .3s;
+}
+/* End Footer */
 
 
 @media (max-width:576px){
