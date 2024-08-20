@@ -68,7 +68,8 @@ body{
     .our-gallery h1,
     .our-services h1,
     .our-services h3,
-    .testimonial h1{
+    .testimonial h1,
+    .contact-us h1{
         color: var(--main-color);
     }
 
@@ -197,22 +198,12 @@ body{
     border-bottom: solid 3px #252525;
 }
 
-
-
-
-
-
-
-/* content: '';
-position: absolute;
-width: 100px;
-height: 150px;
-border-bottom: 3px solid #252525;
-border-right: 3px solid #252525;
-top: 12px;
-left: initial;
-right: 0;
-} */
+/* Start Contact US Section */
+.form-bg{
+    background-image: url('../images/img-9.png');
+    background-size: cover;
+}
+/* End Contact US Section */
 
 
 
@@ -220,5 +211,8 @@ right: 0;
 @media (max-width:576px){
     .our-services{
         height: 175vh;
+    }
+    iframe{
+        min-height: 50vh;
     }
 }
