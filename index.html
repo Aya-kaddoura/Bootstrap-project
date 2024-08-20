@@ -224,12 +224,12 @@
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"
                 style="padding-bottom: 80px;">
                 <div class="carousel-indicators">
-                    <button class="rounded-pill active" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button class="rounded-pill" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button class="rounded-pill" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
+                    <button class="rounded-pill active" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+                    <button class="rounded-pill" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button class="rounded-pill" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="5000">
@@ -289,8 +289,11 @@
                         style="background-color: var(--main-color);">SEND</button>
                 </form>
             </div>
-            <div class="col-12 col-lg-6 px-0" >
-                <iframe class="w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3255.9409943731025!2d36.320970824105906!3d33.495217011586455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1518e1357ea4b333%3A0x5ec188035516c94f!2z2YPZhNmK2Kkg2KfZhNmH2YXZgy3Zgtiz2YUg2YfZhtiv2LPYqSDYp9mE2YPZh9ix2KjYp9im2YrYqQ!5e0!3m2!1sar!2str!4v1724163359022!5m2!1sar!2str" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="col-12 col-lg-6 px-0">
+                <iframe class="w-100 h-100"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3255.9409943731025!2d36.320970824105906!3d33.495217011586455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1518e1357ea4b333%3A0x5ec188035516c94f!2z2YPZhNmK2Kkg2KfZhNmH2YXZgy3Zgtiz2YUg2YfZhtiv2LPYqSDYp9mE2YPZh9ix2KjYp9im2YrYqQ!5e0!3m2!1sar!2str!4v1724163359022!5m2!1sar!2str"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </div>
@@ -302,7 +305,8 @@
             <div class="row ">
                 <div class="col-11 col-lg-3">
                     <h3>About</h3>
-                    <p class="opacity-75">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation u</p>
+                    <p class="opacity-75">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation u</p>
                 </div>
                 <div class="col-11 col-lg-3">
                     <h3>Menu</h3>
@@ -318,18 +322,46 @@
                 </div>
                 <div class="col-11 col-lg-3">
                     <h3>Contact Us</h3>
-                    <a class="d-block text-light text-decoration-none my-2 opacity-75" style="font-size: .9em;" href=""><i class=" fa-solid fa-location"></i> Address : Loram Ipusm</a>
-                    <a class="d-block text-light text-decoration-none my-2 opacity-75" style="font-size: .9em;" href=""><i class=" fa-solid fa-phone"></i> Call : +963 935992856</a>
-                    <a class="d-block text-light text-decoration-none my-2 opacity-75" style="font-size: .9em;" href=""><i class=" fa-solid fa-message"></i> Email : ayakaddoura10@gmail.com</a>
+                    <a class="d-block text-light text-decoration-none my-2 opacity-75" style="font-size: .9em;"
+                        href=""><i class=" fa-solid fa-location"></i> Address : Loram Ipusm</a>
+                    <a class="d-block text-light text-decoration-none my-2 opacity-75" style="font-size: .9em;"
+                        href=""><i class=" fa-solid fa-phone"></i> Call : +963 935992856</a>
+                    <a class="d-block text-light text-decoration-none my-2 opacity-75" style="font-size: .9em;"
+                        href=""><i class=" fa-solid fa-message"></i> Email : ayakaddoura10@gmail.com</a>
                 </div>
             </div>
         </div>
     </div>
     <!-- End Footer -->
 
+    <div id="progress">
+        <span id="progress-value" class="text-dark"><i class="fa-solid fa-arrow-up"></i></span>
+    </div>
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/all.min.js"></script>
+    <script>
+        let calcScrollValue = () => {
+            let scrollProgress = document.getElementById("progress");
+            let progressValue = document.getElementById("progress-value");
+            let pos = document.documentElement.scrollTop;
+            let calcHeight =
+                document.documentElement.scrollHeight -
+                document.documentElement.clientHeight;
+            let scrollValue = Math.round((pos * 100) / calcHeight);
+            if (pos > 100) {
+                scrollProgress.style.display = "grid";
+            } else {
+                scrollProgress.style.display = "none";
+            }
+            scrollProgress.addEventListener("click", () => {
+                document.documentElement.scrollTop = 0;
+            });
+            scrollProgress.style.background = `conic-gradient(#f7632c ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
+        };
+        window.onscroll = calcScrollValue;
+        window.onload = calcScrollValue;
+    </script>
 
 </body>
 
